@@ -1,0 +1,108 @@
+body {
+  background: #018ded url(blur.jpg);
+  background-size: cover;
+}
+
+.App {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.digital {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  color: white;
+}
+.clock {
+  box-sizing: border-box;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 50%;
+  border: 16px solid white;
+}
+
+@media (max-width: 500px) {
+  .clock {
+    border: none;
+  }
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  border-radius: 50%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-12px) translateY(-12px);
+
+  background: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 6px;
+  background: white;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.marker {
+  position: absolute;
+  width: 5%;
+  height: 5px;
+  background: white;
+}
+
+.noon {
+  transform: rotate(90deg) translateY(9px) translateX(9px);
+  left: 50%;
+}
+
+.three {
+  transform: translateY(5px);
+  bottom: 50%;
+  right: 0;
+}
+
+.six {
+  transform: rotate(90deg) translateY(9px);
+  left: 50%;
+  bottom: 3px;
+}
+
+.nine {
+  top: 50%;
+}
+.sec-hand {
+  height: 3px;
+}
+
+.min-hand {
+  height: 4px;
+}
+
+.hour-hand {
+}
